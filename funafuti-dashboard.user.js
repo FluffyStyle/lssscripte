@@ -76,7 +76,7 @@
         var germanDate = sendDate.split('-').reverse().join('.');
 
         if(!checkExistingDate($.makeArray(germanDate))){
-            $.post(`https://docs.google.com/forms/d/e/1FAIpQLSc2co4md13A-Xy12_cRv8-nhNoIP5BMcTHMeJYEFK0TowaCpg/formResponse?entry.1537356074=${sendUsername}&entry.1393924310=${sendCredits}&entry.2016119921=${sendDate}&submit=Submit`);
+          $.post(`https://docs.google.com/forms/d/e/1FAIpQLSfMvXHWbFl4eATFxYPmI4kqhVABldwt_lPHBS4va-EOTYCm_Q/formResponse?entry.2060144052=${sendUsername}&entry.1814145735=${sendCredits}&entry.297423395=${sendDate}&submit=Submit`);
 
             var savedDates = JSON.parse(localStorage.funaDates);
             savedDates.push(germanDate);
