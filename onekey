@@ -1,0 +1,25 @@
+// ==UserScript==
+// @name OneKey
+// @namespace http://tampermonkey.net/
+// @version 0.1
+// @description Alamieren mit einer Taste
+// @author JuMaHo
+// @match *https://www.leitstellenspiel.de/missions/*
+// @grant none
+// ==/UserScript==
+
+(function() {
+'use strict';
+var aao_id = '10864743';
+var key = 221;
+var key_next = 9;
+$(document).keyup(function(e) {
+if (e.keyCode === key){
+$('#aao_' + aao_id + '')[0].click();
+$( "input[name^='commit']" )[0].click();
+}else if(e.keyCode === key_next){
+$('#aao_' + aao_id + '')[0].click();
+$( ".alert_next" )[0].click();
+}
+});
+})();
